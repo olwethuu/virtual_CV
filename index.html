@@ -5,6 +5,9 @@
     <!--helps the website be responsive to any device-->
         <meta name = "viewport" content = "width-device-width, initial-scale = 1.0">
         
+        <!-- link to website where I used the icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <!--gives style to the website-->
         <link rel = "stylesheet" href = "style.css"/>
 
@@ -13,9 +16,9 @@
     <body>
         <!--HEADER OF WEBSITE-->
         <header class = "header">
-            <a href = "#" class= "logo">Portfolio</a> >
+            <a href = "#" class= "logo">Portfolio</a>
             
-            <!--for the bar navigation-->
+            <!--for the bar navigation thats on the side which can help with responsiveness-->
             <i class = "fa-solid fa-bars" id = "menu-icon"></i>
 
             <!--links to the different pages on the navigation (header)-->
@@ -27,8 +30,53 @@
             </nav>
         </header>
 
-        <section></section>
-         <!--helps helps with functionality of the website-->
+         <!--Designing the home section -->
+        <section class = "home" id = "home">
+            <div class = "home-content">
+                <h3>Hi, my name is</h3>
+                <h1>Olwethu Zungu</h1>
+                <h3>I am a software developer.</h3> 
+                <p> (describe myself here)</p>
+
+                <!--for the social media profiles-->
+                <div class = "social-media">
+                    <a href = "#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href = "#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href = "https://www.linkedin.com/public-profile/settings"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href = "#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <!--the button to download CV-->
+                <div class = "btn">Download CV</div>
+
+            </div>
+
+        </section>
+
+        <!--The About section -->
+        <section class = "about" id = "about">
+            <div class = "about-img">
+                <img src = "picOfSelf.jpg" alt = "picture of Olwethu Zungu smiling">
+            </div>
+
+            <div class = "about-content">
+                <h2 class = "heading">ABOUT <span>Me</span></h2>
+                <h3> Software Developer </h3>
+                <p>(describe myself and where I'm from)</p>
+            </div>
+        </section>
+
+        <!--The Skills section -->
+        <section>
+            
+        </section>
+        
+        <!--The Contact Me section -->
+        <section>
+            
+        </section>
+
+
+        <!--helps helps with functionality of the website-->
         <script src = "JS/main.js"></script>
     </body>
 </html>
