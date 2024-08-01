@@ -208,6 +208,7 @@ span{
     text-align: center;
     gap: 2rem;
     border: .2rem solid var(--bg-color);
+    border-radius: 10%;
     transition: .5s ease;
 }
 
@@ -230,6 +231,8 @@ span{
      margin: 1rem 0 3rem;
 }
 
+/*Projects section*/
+
 
 
 /*Contact Me Section Design*/
@@ -238,7 +241,21 @@ span{
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    
+    color: var(--text-color);
+    background: var(--snd-bf-color);
+    border-radius: .2rem;
+    margin: .7rem 0;
+}
 
+.contact form .input-box input{
+    width: 40%
+}
 
+.contact form textarea{
+    resize: none;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+    cursor: pointer;
 }
