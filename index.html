@@ -8,6 +8,10 @@
         <!-- link to website where I used the icons-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <!--for my favicon-->
+        <link rel = "icon" type = "image/x-icon" href = "iconForPage.jpg">
+        
+
         <!--gives style to the website-->
         <link rel = "stylesheet" href = "style.css"/>
 
@@ -48,33 +52,74 @@
                 <!--the button to download CV-->
                 <div class = "btn">Download CV</div>
 
+                <div class = "home-img">
+                    <img src = "picOfSelf.jpg" alt = "picture of Olwethu Zungu smiling">
+                </div>
+    
             </div>
 
         </section>
 
         <!--The About section -->
         <section class = "about" id = "about">
-            <div class = "about-img">
-                <img src = "picOfSelf.jpg" alt = "picture of Olwethu Zungu smiling">
-            </div>
-
             <div class = "about-content">
-                <h2 class = "heading">ABOUT <span>Me</span></h2>
+                <h2 class = "heading">About <span>Me</span></h2>
                 <h3> Software Developer </h3>
                 <p>(describe myself and where I'm from)</p>
             </div>
         </section>
 
         <!--The Skills section -->
-        <section>
+        <section class = "skills" id = "skills">
+            <h2 class = "heading"> My <span> Skills</span></h2>
+
+            <div class = "skill-container">
+                <div class = "skill-box">
+                    <i class="fa-solid fa-database"></i>
+                <h2>SQL</h2>
+                <p>I can use Oracle Database. I can use SQL statements to retieve and maintain data from the database. </p>
+                </div>
+
+                <div class = "skill-box">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Data Analytics</h2>
+                    <p>I can use Excel, Google Sheets, Power BI and Tableau to analyze and visualize data.</p>
+                </div>
+            </div>
+
             
         </section>
         
         <!--The Contact Me section -->
-        <section>
-            
+        <section class = "contact" id = "contact">
+            <h2 class = "heading"> Contact <span> Me</span></h2>
+        
+            <form action = "#">
+                <div class = "input-box">
+                    <input type = "text" placeholder="Full Name">
+                    <input type = "email" placeholder="Email">
+                </div>
+
+                <div class = "input-box">
+                    <input type = "number" placeholder="Mobile Number">
+                    <input type = "text" placeholder="Email subject">
+                </div>
+
+                <textarea name = "" id = "" cols = "30" rows = "10" placeholder = "Your Message"></textarea>
+                <input type = "submit" value = "Send Message" class = "btn">
+            </form> 
         </section>
 
+        <!--Footer Design-->
+        <footer class = "footer">
+            <div class="footer-text">
+                <p> Portfolio by Olwethu Zungu, 2024 | All rights reserved</p>
+            </div>
+
+            <div class = "footer-icontop">
+                <a href = #home><i class="fa-solid fa-house"></i></a>
+            </div>
+        </footer>
 
         <!--helps helps with functionality of the website-->
         <script src = "JS/main.js"></script>
