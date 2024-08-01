@@ -40,14 +40,13 @@
             <div class = "home-content">
                 <h3>Hi, my name is</h3>
                 <h1>Olwethu Zungu</h1>
-                <h3>I am a software developer.</h3> 
-                <p> (describe myself here)</p>
+                <h3>I am a Programmer.</h3> 
 
                 <!--for the social media profiles-->
                 <div class = "social-media">
-                    <a href = "#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href = "#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href = "https://www.linkedin.com/public-profile/settings"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href = "https://m.facebook.com/olwethu.zungu.9674/" target = "blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href = "https://www.instagram.com/olwee.z/" target = "blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href = "https://www.linkedin.com/public-profile/settings" target = "blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href = "#"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <!--the button to download CV-->
@@ -63,10 +62,13 @@
 
         <!--The About section -->
         <section class = "about" id = "about">
+            <div class = "about-img">
+                <img src = "twoPicOf.jpg" alt = "second picture of Olwethu Zungu" >
+            </div>
+
             <div class = "about-content">
                 <h2 class = "heading">About <span>Me</span></h2>
-                <h3> Software Developer </h3>
-                <p>(describe myself and where I'm from)</p>
+                <p>Hello, my name is Olwethu Zungu. I am a 21 year old IT student who is dedicated and passionate about being in the world of tech, where a lot of daily problems are solved in a click of a button or simply pressing "Esc". My experiences working on collaborative projects, where I developed creative solutions with teams to create things like online resource sharing platform for education and project trackers, are something I am really proud of. My ability to manage project timetables and function well in team contexts has improved as a result of these experiences. In addition to my technical expertise, I'm dedicated to lifelong learning and keeping up with the most recent developments in the field. I firmly think that technology can propel businesses to success, and I'm excited to provide my skills and energy to an innovative IT team.</p>
             </div>
         </section>
 
@@ -75,6 +77,7 @@
             <h2 class = "heading"> My <span> Skills</span></h2>
 
             <div class = "skill-container">
+
                 <div class = "skill-box">
                     <i class="fa-solid fa-database"></i>
                 <h3>SQL</h3>
@@ -86,13 +89,37 @@
                     <h3>Data Analytics</h3>
                     <p>I can use Excel, Google Sheets, Power BI and Tableau to analyze and visualize data.</p>
                 </div>
+                
+                <div class = "skill-box">
+                    <i class="fa-solid fa-computer"></i>
+                    <h3>Software Developing</h3>
+                    <p>I can use Visual Studio, VS Code, Notepad++ and CodeBlocks with programming languages like Java, C#, C++, Python, HTML, CSS and JavaScript.</p>
+                </div>
+
             </div>
         </section>
 
         <!--The projects Section-->
         <section class = "projects" id = "projects">
             <h2 class = "heading"> Projects</h2>
-            <div class = ""></div>
+            
+            <div class = "project-container">
+                <div class = "project-box">
+                    <a href = "https://github.com/BethelMaita/cmpg223-group-19-project" target = "blank">
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>Project tracker system</h2>
+                    <p> This project is a collaborative project tracker system built in my second year. It demonstrated our knowledge in software developing using C#, creating and using databases, and error handling</p>
+                    </a>
+                </div>
+                
+                    <div class = "project-box">
+                        <a href = "https://github.com/mvula-github/Share2Teach" target = "blank">
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Share2Teach Web Application</h2>
+                        <p> This project is a collaborative web development program built in my third year. It demonstrated our knowledge in web developing using using React and Node, creating and using cloud databases.</p>
+                        </a>
+                    </div>
+            </div>
 
         </section>
         
@@ -126,6 +153,9 @@
                 <a href = #home><i class="fa-solid fa-house"></i></a>
             </div>
         </footer>
+
+        <!--For scrolling-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--helps helps with functionality of the website-->
         <script src = "JS/main.js"></script>
