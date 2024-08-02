@@ -1,17 +1,15 @@
 /* navbar toggle */
 
-let menuIcon = document.querySelector('menu-icon');
-let navbar = document.querySelector('navbar');
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
     navbar.classList.toggle('active');
 }
 
-/*  scrolling in active section*/
-
 let sections = document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('header nav a');
+let navLink = document.querySelectorAll('header nav a');
 
 window.onscroll = () => {
     sections.forEach(sec => {
@@ -21,26 +19,25 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height){
-            navlinks.forEach.apply(links => {
+            navLink.forEach.apply(links =>{
                 links.classList.remove('active');
-                document.querySelector('header nav a[href"#' + id + ']').classlist.add('active');
-            })
-        }
+                document.querySelector('header nav a [href" =' + id + '"]').classList.add('active');
+            });
+        };
+
+    });
+
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 100);
+
+    menuIcon.classList.remove('fa-xmark');
+    navbar.classList.remove('active');
 }
-
-    )
-}
+    
 
 
-/*stick navbar */
 
-let header = document.querySelector('header');
-header.classList.toggle('sticky', window.scrollY > 100);
 
-/**to remove toggle icon and navbar */
-
-menuIcon.classList.remove('fa-xmark');
-navbar.classList.remove('active');
 
 /**scroll reveal, to help with the scrolling */
 
@@ -54,5 +51,4 @@ ScrollReveal().reveal('.home-content, heading', {origin: 'top'});
 ScrollReveal().reveal('.home.img, .skills-container, .project-box, .contact form', {origin: 'bottom'});
 ScrollReveal().reveal('.home-contact h1, .home-img', {origin: 'left'});
 ScrollReveal().reveal('.home.contact p, .about-content', {origin: 'right'});
-
 

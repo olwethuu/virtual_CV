@@ -14,7 +14,7 @@
 
 :root{
     --bg-color: #9b6af0;
-    --snd-bf-color: #1390d9; 
+    --snd-bf-color: #a0d0eb; 
     --text-color: #fff;
     --main-color: #18032c;
 }
@@ -74,7 +74,7 @@ section{
 }
 
 /*for the menu icon (bars)*/
-.menu-icon{
+#menu-icon{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
@@ -85,10 +85,6 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.home-content {
-    margin-right: 2rem;
 }
 
 .home-content h3{
@@ -267,11 +263,11 @@ span{
 
 .project-box i{
     font-size: 7rem;
-    color: var(--main-color)
+    color: var(--main-color);
 }
 
 .project-box h2{
-     font-size: 2.8rem;
+     font-size: 3.5rem;
 }
 
 .project-box p{
@@ -280,8 +276,24 @@ span{
 }
 
 
-
 /*Contact Me Section Design*/
+.contact h2{
+    margin-bottom: 3ren;
+}
+
+.contact form{
+    max-width: 70ren;
+    margin: 1ren auto;
+    text-align: center;
+    margin-bottom: 3ren;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .contact form .input-box input,
 .contact form textarea{
     width: 100%;
@@ -294,7 +306,7 @@ span{
 }
 
 .contact form .input-box input{
-    width: 40%
+    width: 49%
 }
 
 .contact form textarea{
@@ -352,7 +364,7 @@ span{
         padding: 2rem 3%;
     }
 
-    .section {
+    section {
         padding: 10rem;
     }
 
@@ -378,6 +390,23 @@ span{
         display: block;
     }
 
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, .2);
+        box-shadow: 0 .5rem rgba(0, 0, .2);
+        display: none;
+    }
+
+    .navbar.active{
+        display: block;
+    }
+
+
     .home{
         flex-direction: column;
     }
@@ -386,8 +415,16 @@ span{
         font-size: 2.6rem;
     }
 
+    .home-content h1{
+        font-size: 5rem;
+    }
+
+    .home-content{
+        order: 2;
+    }
+
     .home-img img{
-        width: 90vw;
+        width: 70vw;
         margin-top: 4rem;
     }
 
@@ -416,7 +453,7 @@ span{
     }
 
     .about-img img{
-        width: 100;
+        width: 100vw;
         margin-top: 4rem;
     }
 }
@@ -439,7 +476,7 @@ span{
         display: block;
     }
 
-    .navbar{
+    /**.navbar{
         position: absolute;
         top: 100%;
         left: 0;
@@ -460,7 +497,7 @@ span{
         font-size: 2rem;
         margin: 1rem 0;
     }
-
+*/
     .home {
         flex-direction: column;
     }
