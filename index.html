@@ -23,10 +23,15 @@
             <a href = "#" class= "logo">Portfolio</a>
             
             <!--for the bar navigation thats on the side which can help with responsiveness-->
-            <i class = "fa-solid fa-bars" id = "menu-icon"></i>
+            <i class = "fa-solid fa-bars" id="menu-icon" onclick="show()"></i>
 
             <!--links to the different pages on the navigation (header)-->
-            <nav class = "navbar">
+            <nav class = "navbar" id="nav-menu">
+                <div class="exit">
+                    <span class="exit-span" id="exit">
+                        x
+                    </span>
+                </div>
                 <a href = "#home" class = "active" >Home</a>
                 <a href = "#about" >About</a>
                 <a href = "#skills" >Skills</a>
@@ -158,6 +163,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--helps helps with functionality of the website-->
-        <script src = "JS/main.js"></script>
+        <script src = "main.js"></script>
     </body>
 </html>

@@ -52,6 +52,10 @@ section{
     border-bottom: .1rem solid rgba(0, 0, .2);
 }
 
+.exit-span{
+    display: none;
+}
+
 /*for the "portfolio" logo*/
 .logo{
     font-size: 2.5rem;
@@ -361,11 +365,16 @@ span{
     html{
         font-size: 55%
     }
+
 }
 
 @media(max-width: 991px){
     .header {
         padding: 2rem 3%;
+    }
+
+    #menu-icon{
+        display: none;
     }
 
     section {
@@ -392,29 +401,74 @@ span{
 @media (max-width: 768px){
     #menu-icon{
         display: block;
+        cursor: pointer;
+    }
+
+    .header{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .navbar{
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        height: 500px;
+        width: 300px;
+        padding: 1rem 3%;
+        /* background: var(--bg-color); */
+        background-color: #444;
+        border-top: .1rem solid rgba(0, 0, .2);
+        box-shadow: 0.5rem rgba(0, 0, .2);
+        display: none;
+        
+    }
+
+    .exit{
+        font-size: 20px;
+        height: 60px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .exit-span{
+        font-size: 20px;
+        color: #fff;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        border-radius: 100%;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    .exit-span:hover{
+        background-color: #17272c;
+        color: #18032c;
+    }
+
+    .navbar.active{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 10;
+        height: 100vh;
+        width: 300px;
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, .2);
-        box-shadow: 0 .5rem rgba(0, 0, .2);
-        display: none;
+        box-shadow: 0.5rem rgba(0, 0, .2);
     }
 
-    .navbar.active{
-        display: block;
-    }
-
-    .navbar.active{
-        display: block;
-        font-size: 2rem;
-        margin:1rem 0;
-    }
 
     .home{
         flex-direction: column;
@@ -465,6 +519,7 @@ span{
         width: 100vw;
         margin-top: 4rem;
     }
+
 }
 
 @media(max-width: 450px){
@@ -485,28 +540,7 @@ span{
         display: block;
     }
 
-    /**.navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, .2);
-        box-shadow: 0 .5rem rgba(0, 0, .2);
-        display: none;
-    }
 
-    .navbar.active{
-        display: block;
-    }
-
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 1rem 0;
-    }
-*/
     .home {
         flex-direction: column;
     }

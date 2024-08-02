@@ -1,12 +1,40 @@
 /* navbar toggle */
+show();
 
 let menuIcon = document.querySelector('#menu-icon');
+let exit = document.querySelector('#exit');
 let navbar = document.querySelector('.navbar');
+
+const navBar = document.getElementById("nav-menu");
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('fa-xmark');
-    navbar.classList.toggle('active');
+    navbar.classList.toggle('.active');
 }
+
+
+
+function show(){
+    // navbar.classList.add('active');
+    // console.log("its working");
+    // document.getElementById("nav-menu").style.display = "flex";
+}
+
+menuIcon.onclick = () => {
+    navbar.classList.add('active');
+    // document.getElementById("nav-menu").style.display = "flex";
+}
+
+exit.onclick = () => {
+    navbar.classList.remove('active');
+    // document.getElementById("nav-menu").style.display = "flex";
+}
+
+
+// document.getElementById("#menu-icon").addEventListener("click", show);
+
+
+
 
 let sections = document.querySelectorAll('section');
 let navLink = document.querySelectorAll('header nav a');
@@ -19,7 +47,7 @@ window.onscroll = () => {
         let id = sec.getAttribute('id');
 
         if(top >= offset && top < offset + height){
-            navLink.forEach(links =>{
+            navLink.forEach.apply(links =>{
                 links.classList.remove('active');
                 document.querySelector('header nav a[href*=' + id + '"]').classList.add('active');
             });
