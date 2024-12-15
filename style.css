@@ -48,13 +48,6 @@ section{
     z-index: 100;
 }
 
-.header.sticky{
-    border-bottom: .1rem solid rgba(0, 0, .2);
-}
-
-.exit-span{
-    display: none;
-}
 
 /*for the "portfolio" logo*/
 .logo{
@@ -131,6 +124,9 @@ span{
     }
 }
 
+.home-content p{
+    font-size: 1.6rem;
+}
 
 .social-media a{
     display: inline-flex;
@@ -269,6 +265,11 @@ span{
     transition: .5s ease;
 } 
 
+.project-container .project-box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
 .project-box i{
     font-size: 7rem;
     color: var(--main-color);
@@ -360,7 +361,7 @@ span{
     color: var(--snd-bf-color);
 }
 
-/*breakpoint*/
+/*breakpoint and responsiveness*/
 @media(max-width: 1200px){
     html{
         font-size: 55%
@@ -373,12 +374,8 @@ span{
         padding: 2rem 3%;
     }
 
-    #menu-icon{
-        display: none;
-    }
-
     section {
-        padding: 10rem;
+        padding: 10rem 3%;
     }
 
     .skills {
@@ -394,81 +391,38 @@ span{
     }
 
     .footer {
-        padding: 2rem 1%;
+        padding: 2rem 3%;
     }   
 }
 
 @media (max-width: 768px){
     #menu-icon{
         display: block;
-        cursor: pointer;
     }
 
-    .header{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 
     .navbar{
         position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 10;
-        height: 500px;
-        width: 300px;
+        top: 100%;
+        left: 0;
+        width: 100%;
         padding: 1rem 3%;
-        /* background: var(--bg-color); */
-        background-color: #444;
-        border-top: .1rem solid rgba(0, 0, .2);
-        box-shadow: 0.5rem rgba(0, 0, .2);
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         display: none;
         
     }
 
-    .exit{
-        font-size: 20px;
-        height: 60px;
-        display: flex;
-        flex-direction: row-reverse;
-    }
-
-    .exit-span{
-        font-size: 20px;
-        color: #fff;
-        height: 50px;
-        width: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        border-radius: 100%;
-        font-weight: 700;
-        cursor: pointer;
-    }
-
-    .exit-span:hover{
-        background-color: #17272c;
-        color: #18032c;
-    }
-
     .navbar.active{
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 10;
-        height: 100vh;
-        width: 300px;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0, 0, .2);
-        box-shadow: 0.5rem rgba(0, 0, .2);
+        display: block;
     }
 
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
 
     .home{
         flex-direction: column;
@@ -532,20 +486,3 @@ span{
     }
 }
 
-
-
-/*with help from js file*/
-@media (max-width: 700px) {
-    .menu-icon{
-        display: block;
-    }
-
-
-    .home {
-        flex-direction: column;
-    }
-
-    .home-content{
-        font-size: 2.6rems;
-    }
-}
