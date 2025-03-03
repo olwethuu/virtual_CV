@@ -87,13 +87,19 @@
                 <div class = "skill-box">
                     <i class="fa-solid fa-chart-simple"></i>
                     <h3>Data Analytics</h3>
-                    <p>I can use Excel and Google Sheets as spreadsheets to clean and analyse data, Power BI, Python and Tableau to visualize data, as well as Azure.</p>
+                    <p>I can use Excel and Google Sheets as spreadsheets to clean and analyse data, Power BI, Python (Pandas) and Tableau to visualize data, as well as Azure as cloud.</p>
                 </div>
                 
                 <div class = "skill-box">
                     <i class="fa-solid fa-computer"></i>
                     <h3>Software Developing</h3>
-                    <p>I can use Visual Studio, VS Code, Notepad++ and CodeBlocks with programming languages like Java, C#, C++, Python, HTML, CSS and JavaScript.</p>
+                    <p>I can use Visual Studio, Jupyter Notebook, Notepad++ and CodeBlocks with programming languages like Java, C#, C++ and Python.</p>
+                </div>
+
+                <div class = "skill-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Developing</h3>
+                    <p>I can use VS Code and Notepad++ with programming languages like HTML, CSS and JavaScript.</p>
                 </div>
 
             </div>
@@ -120,12 +126,20 @@
                         </a>
                     </div>
 
-                    <div class = "project-container">
+                    
                         <div class = "project-box">
                             <a href = "Group 11 Phase 2.pdf" download = "Group 11 Phase 2.pdf" target = blank>
                             <i class = "fa-solid fa-chart-simple"></i>
                             <h2>AirBnb Data</h2>
                             <p> This project is a collaborative data analytics report done in my third year. It demonstrated our knowledge in data analytics using Oracle database to load and process the AirBnb Cape Town data, as well as Excel to clean, analyze and report that data using tables and charts.</p>
+                            </a>
+                        </div>
+
+                        <div class = "project-box">
+                            <a href = "https://github.com/olwethuu/virtual_CV" target = "blank">
+                            <i class="fa-solid fa-code"></i>
+                            <h2> Olwethu's virtual CV</h2>
+                            <p> This project is a solo web development program built in my third year. It demonstrated my knowledge in frontend web developing using HTML, CSS and JavaScript.</p>
                             </a>
                         </div>
                     </div>
@@ -137,18 +151,21 @@
         <section class = "contact" id = "contact">
             <h2 class = "heading"> Contact <span> Me</span></h2>
         
-            <form action = "#">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <input type="hidden" name="access_key" value="7a7d89a5-6991-4df4-bcac-06a7e8b2c4ff">
+
                 <div class = "input-box">
-                    <input type = "text" placeholder="Full Name">
-                    <input type = "email" placeholder="Email">
+                    <input type = "text" name = "name" placeholder="Full Name">
+                    <input type = "email" name = "email" placeholder="Email">
                 </div>
 
                 <div class = "input-box">
-                    <input type = "number" placeholder="Mobile Number">
-                    <input type = "text" placeholder="Email subject">
+                    <input type = "number" name = "number" placeholder="Mobile Number">
+                    <input type = "text" name = "subject" placeholder="Email subject">
                 </div>
 
-                <textarea name = "" id = "" cols = "30" rows = "10" placeholder = "Your Message"></textarea>
+                <textarea name = "message" cols = "30" rows = "10" placeholder = "Your Message"></textarea>
                 <input type = "submit" value = "Send Message" class = "btn">
             </form> 
         </section>
